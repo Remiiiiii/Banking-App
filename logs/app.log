@@ -1,0 +1,1737 @@
+2023-06-11 13:45:00,649 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "name" of relation "account" does not exist
+  Position: 21
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:32) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:22) [classes/:?]
+	at com.freelance.consoleViews.Dashboard.view(Dashboard.java:35) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:46) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-11 14:21:40,954 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "name" of relation "account" does not exist
+  Position: 21
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:32) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:22) [classes/:?]
+	at com.freelance.consoleViews.Dashboard.view(Dashboard.java:38) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:46) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-11 14:29:59,362 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "name" of relation "account" does not exist
+  Position: 21
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:32) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:22) [classes/:?]
+	at com.freelance.consoleViews.Dashboard.view(Dashboard.java:38) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:46) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-11 14:36:53,613 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:31) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:22) [classes/:?]
+	at com.freelance.consoleViews.Dashboard.view(Dashboard.java:38) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:46) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-12 15:53:20,204 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccountsByCustomerId(AccountDaoImpl.java:99) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccountsByCustomerId(AccountServices.java:27) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountInfo(CustomerDashboard.java:76) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:24) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:49) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-12 16:03:13,301 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccountsByCustomerId(AccountDaoImpl.java:99) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccountsByCustomerId(AccountServices.java:27) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountInfo(CustomerDashboard.java:76) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:24) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-12 20:22:29,241 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:116) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:75) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-12 20:22:49,920 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:116) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:75) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-12 20:26:40,239 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:116) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:75) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-12 20:37:01,569 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:116) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:75) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 12:00:48,751 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "initial_deposit" of relation "customer" violates not-null constraint
+  Detail: Failing row contains (1, remy123, pass123, Remy, Ouji, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.createCustomer(CustomerDaoImpl.java:103) [classes/:?]
+	at com.freelance.Services.CustomerServices.createCustomer(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 12:03:48,919 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "initial_deposit" of relation "customer" violates not-null constraint
+  Detail: Failing row contains (2, remy123, pass123, Remy, Ouji, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.createCustomer(CustomerDaoImpl.java:103) [classes/:?]
+	at com.freelance.Services.CustomerServices.createCustomer(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 12:21:26,281 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "initial_deposit" of relation "customer" violates not-null constraint
+  Detail: Failing row contains (3, remy123, pass123, Remy, Ouji, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.createCustomer(CustomerDaoImpl.java:105) [classes/:?]
+	at com.freelance.Services.CustomerServices.createCustomer(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 12:24:24,243 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "initial_deposit" of relation "customer" violates not-null constraint
+  Detail: Failing row contains (4, remy123, pass123, Remy, Ouji, null, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.createCustomer(CustomerDaoImpl.java:105) [classes/:?]
+	at com.freelance.Services.CustomerServices.createCustomer(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:12:15,399 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: column "approve" does not exist
+  Hint: Perhaps you meant to reference the column "account_status.approved".
+  Position: 18
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:65) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:13:07,240 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: column "approve" does not exist
+  Hint: Perhaps you meant to reference the column "account_status.approved".
+  Position: 18
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:65) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:16:05,436 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type int : remy123
+	at org.postgresql.jdbc.PgResultSet.toInt(PgResultSet.java:3299) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getInt(PgResultSet.java:2512) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:69) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:17:38,548 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type int : remy123
+	at org.postgresql.jdbc.PgResultSet.toInt(PgResultSet.java:3299) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getInt(PgResultSet.java:2512) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:69) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:34:31,783 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type int : remy123
+	at org.postgresql.jdbc.PgResultSet.toInt(PgResultSet.java:3299) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getInt(PgResultSet.java:2512) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:69) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:37:48,061 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type int : remy123
+	at org.postgresql.jdbc.PgResultSet.toInt(PgResultSet.java:3299) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getInt(PgResultSet.java:2512) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:69) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:40:23,855 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type int : remy123
+	at org.postgresql.jdbc.PgResultSet.toInt(PgResultSet.java:3299) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getInt(PgResultSet.java:2512) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:69) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:55:28,202 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:57:07,406 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:57:48,980 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:57:56,488 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:80) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:47) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 17:59:29,117 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:79) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:46) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 18:00:22,806 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:79) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:46) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 18:02:06,789 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:79) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:46) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 18:03:47,556 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type int : remy123
+	at org.postgresql.jdbc.PgResultSet.toInt(PgResultSet.java:3299) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getInt(PgResultSet.java:2512) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:69) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:79) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:46) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 18:04:30,132 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:79) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:46) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-13 18:06:29,531 ERROR c.f.m.AccountStatus [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Cannot cast to boolean: "Denied"
+	at org.postgresql.jdbc.BooleanTypeUtil.cannotCoerceException(BooleanTypeUtil.java:99) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.fromString(BooleanTypeUtil.java:67) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.BooleanTypeUtil.castToBoolean(BooleanTypeUtil.java:43) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getBoolean(PgResultSet.java:2398) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountStatusDaoImpl.viewAccountStatusByUsername(AccountStatusDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.AccountStatusServices.viewAccountStatusByUsername(AccountStatusServices.java:47) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printAccountStatus(CustomerDashboard.java:79) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:46) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:14:37,336 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:81) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:15:49,136 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:81) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:20:57,091 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:81) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:21:19,197 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:81) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:29:28,413 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:81) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:32:29,675 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:82) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:45) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:34:55,562 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:82) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:45) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:36:16,664 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : checking
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAllAccounts(AccountDaoImpl.java:113) [classes/:?]
+	at com.freelance.Services.AccountServices.getAllAccounts(AccountServices.java:32) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.printAccounts(EmployeeDashboard.java:82) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:45) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 12:49:58,522 ERROR c.f.d.EmployeeDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "approved" of relation "account_status" does not exist
+  Position: 27
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.EmployeeDaoImpl.approveOrDenyAccountByCustomerId(EmployeeDaoImpl.java:122) [classes/:?]
+	at com.freelance.Services.EmployeeServices.approveAccountGivenAccountId(EmployeeServices.java:54) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:58) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 21:54:25,836 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "username" of relation "account" violates not-null constraint
+  Detail: Failing row contains (2, null, 1000.23, Checking).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:32) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:23) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:97) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 22:23:26,150 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCustomerByUsername(AccountDaoImpl.java:145) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:23) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:97) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 22:23:26,508 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: No value specified for parameter 3.
+	at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:284) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:352) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:33) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:27) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:97) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-14 22:31:15,524 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: relation "users" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCustomerByUsername(AccountDaoImpl.java:145) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:23) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:97) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 13:54:52,706 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: column "balance" does not exist
+  Position: 8
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:178) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:53) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:96) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:64) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 13:55:34,081 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: column "balance" does not exist
+  Position: 8
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:178) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:53) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:98) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:64) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 13:58:27,168 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: column "account_balance" does not exist
+  Position: 8
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:178) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:53) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:98) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:64) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:03:24,019 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:53) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:98) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:64) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:09:38,358 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:53) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:98) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:64) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:20:18,923 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type double : pass123
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAccountByUsername(AccountDaoImpl.java:217) [classes/:?]
+	at com.freelance.Services.AccountServices.validateCredentials(AccountServices.java:24) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:62) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:33:41,919 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type double : pass123
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAccountBalanceByUsername(AccountDaoImpl.java:217) [classes/:?]
+	at com.freelance.Services.AccountServices.validateCredentials(AccountServices.java:24) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:62) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:44:52,551 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type double : pass123
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAccountBalanceByUsername(AccountDaoImpl.java:217) [classes/:?]
+	at com.freelance.Services.AccountServices.validateCredentials(AccountServices.java:24) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:62) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:50:02,130 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:71) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:99) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:65) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:50:20,038 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:71) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:99) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:65) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 14:57:47,875 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:67) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:99) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:65) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 15:01:37,531 ERROR c.f.u.ConnectionUtil [main] Connection attempt failed
+2023-06-15 15:01:37,535 ERROR c.f.d.EmployeeDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.EmployeeDaoImpl.getEmployeeGivenUsername(EmployeeDaoImpl.java:83) [classes/:?]
+	at com.freelance.Services.EmployeeServices.validateCredentials(EmployeeServices.java:22) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:47) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 15:01:42,585 ERROR c.f.u.ConnectionUtil [main] Connection attempt failed
+2023-06-15 15:01:42,586 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:26) [classes/:?]
+	at com.freelance.Services.CustomerServices.getCustomerGivenUsername(CustomerServices.java:36) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:51) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 15:05:44,939 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:70) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:99) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:65) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 15:38:05,855 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:72) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:100) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:66) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 16:15:39,807 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:72) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:100) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:66) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 16:29:09,130 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getBalanceByUsername(AccountServices.java:70) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:100) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:66) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 18:11:39,852 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: column "account_balances" does not exist
+  Hint: Perhaps you meant to reference the column "account.account_balance".
+  Position: 8
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAccountBalanceByUsername(AccountDaoImpl.java:178) [classes/:?]
+	at com.freelance.Services.AccountServices.getAccountBalanceByUsername(AccountServices.java:72) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:102) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:67) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-15 18:12:15,262 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getAccountBalanceByUsername(AccountDaoImpl.java:183) [classes/:?]
+	at com.freelance.Services.AccountServices.getAccountBalanceByUsername(AccountServices.java:72) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.printBalance(CustomerDashboard.java:102) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:67) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 14:17:56,817 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:67) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 14:20:16,684 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:67) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 14:22:46,118 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:67) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 15:12:56,959 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "account_balance" of relation "account" does not exist
+  Position: 31
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:33) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:46) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:103) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:58) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 19:00:27,412 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: operator does not exist: character varying = double precision
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:241) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:77) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:83) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 19:01:06,763 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: operator does not exist: character varying = double precision
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 57
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:241) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:77) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:83) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 19:32:50,184 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:239) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:77) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:83) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 19:36:05,986 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:77) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:83) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 19:37:07,066 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:77) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:83) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-16 19:39:36,394 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:77) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:83) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-17 18:21:22,858 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:270) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:108) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-17 18:26:28,067 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:270) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:108) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-17 18:27:04,663 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:270) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:108) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 14:23:21,043 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:280) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:112) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 14:27:37,377 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:280) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:112) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 14:28:18,672 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:280) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:112) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 14:41:49,741 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: No value specified for parameter 2.
+	at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:284) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:352) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:250) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 14:50:13,184 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 15:02:18,990 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromChecking(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromChecking(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 17:42:37,762 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: No value specified for parameter 3.
+	at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:284) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:352) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:251) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 17:49:42,267 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:88) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 17:53:27,702 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:85) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 18:07:40,367 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:89) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 18:55:41,320 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:91) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 18:57:46,525 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:91) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 18:58:33,528 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:91) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 19:11:49,358 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:91) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 19:50:49,190 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:281) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:89) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-18 19:50:49,547 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+java.lang.NullPointerException: null
+	at com.freelance.dao.AccountDaoImpl.withdrawalFromCheckingByUsername(AccountDaoImpl.java:238) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:91) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:89) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:18:44,449 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:107) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:21:06,783 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:114) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:23:35,688 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:116) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:28:25,767 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:114) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:44:46,600 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:114) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:45:50,524 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:114) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:47:30,156 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:107) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:48:13,271 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:107) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:50:40,943 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:109) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 09:57:22,412 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:115) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:01:43,565 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:121) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:03:27,023 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:123) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:09:07,064 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:125) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:12:27,511 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:122) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:23:54,169 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:132) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:28:12,868 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:133) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:29:48,718 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:131) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:39:13,845 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:131) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 10:43:45,057 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: The column index is out of range: 2, number of columns: 1.
+	at org.postgresql.jdbc.PgResultSet.checkColumnIndex(PgResultSet.java:3205) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getRawValue(PgResultSet.java:3227) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:2315) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceByUsername(AccountDaoImpl.java:271) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingAccountBalanceByUsername(AccountServices.java:117) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:77) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-19 11:06:08,972 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: ERROR: operator does not exist: character varying = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 53
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCheckingBalanceById(AccountDaoImpl.java:266) [classes/:?]
+	at com.freelance.Services.AccountServices.getCheckingBalanceById(AccountServices.java:115) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:78) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 16:56:50,674 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "date_and_time" of relation "transactions" violates not-null constraint
+  Detail: Failing row contains (1, null, 46237.00, Deposit into checking, remy123).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.depositIntoCheckingByUsername(AccountServices.java:162) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:94) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 17:00:19,471 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "date_and_time" of relation "transactions" violates not-null constraint
+  Detail: Failing row contains (2, null, 20.00, Withdrawal from checking, remy123).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:104) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:148) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 18:13:53,798 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "date_and_time" of relation "transactions" violates not-null constraint
+  Detail: Failing row contains (3, null, 46197.00, Withdrawal from checking, remy123).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:108) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:148) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 18:30:14,353 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "date_and_time" of relation "transactions" violates not-null constraint
+  Detail: Failing row contains (4, null, 2.00, Withdrawal from checking, remy123).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:104) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:148) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 18:51:40,379 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "date_and_time" of relation "transactions" violates not-null constraint
+  Detail: Failing row contains (5, null, 2.00, Withdrawal from checking, remy123).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.saveAllTransactions(AccountDaoImpl.java:458) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:104) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:148) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 19:25:38,931 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: No value specified for parameter 4.
+	at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:284) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:352) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.saveAllTransactions(AccountDaoImpl.java:458) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:107) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:148) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:52) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 21:38:32,883 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 21:38:40,480 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 21:39:39,442 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 21:40:10,033 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 21:42:35,060 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "checking_deposit" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 121
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:70) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 21:55:09,051 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "checking_deposit" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 121
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:70) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:08:26,640 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "checking_deposit" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 121
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:70) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:28:27,069 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "checking_deposit" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 121
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:70) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:29:17,320 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:38:04,336 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:22) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:50:35,604 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:50:58,297 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:51:49,065 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 22:56:21,117 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 23:16:08,100 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-20 23:22:53,619 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "checking_deposit" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 122
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.registerForAnAccount(CustomerDaoImpl.java:71) [classes/:?]
+	at com.freelance.Services.CustomerServices.registerForAnAccount(CustomerServices.java:44) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:84) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 11:13:38,779 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:39) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 11:43:00,499 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:40) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:44) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 11:55:54,603 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:40) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:48) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 12:17:41,089 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:40) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:48) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 12:18:26,608 INFO c.f.c.MainMenu [main] admin123has successfully logged in
+2023-06-21 12:29:24,527 ERROR c.f.d.CustomerDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: Bad value for type double : 40,500.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.CustomerDaoImpl.getCustomerByUsername(CustomerDaoImpl.java:40) [classes/:?]
+	at com.freelance.Services.CustomerServices.validateCredentials(CustomerServices.java:21) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:48) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 12:49:41,338 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 13:15:14,409 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 13:21:12,558 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 13:28:46,800 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 13:30:12,202 ERROR c.f.d.AccountDaoImpl [main] Sql Exception Occured
+org.postgresql.util.PSQLException: Bad value for type double : 105,400.00
+	at org.postgresql.jdbc.PgResultSet.toDouble(PgResultSet.java:3389) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgResultSet.getDouble(PgResultSet.java:2723) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.getCustomerByUsername(AccountDaoImpl.java:152) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:58) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:107) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:65) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 13:30:12,573 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "checking_balance" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 76
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.createAccount(AccountDaoImpl.java:34) [classes/:?]
+	at com.freelance.Services.AccountServices.createAccount(AccountServices.java:62) [classes/:?]
+	at com.freelance.consoleViews.EmployeeDashboard.view(EmployeeDashboard.java:107) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:65) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 13:33:06,953 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 13:55:31,642 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 13:56:16,014 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "transaction_amount" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.depositIntoCheckingByUsername(AccountServices.java:166) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:94) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 13:56:37,343 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "transaction_amount" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.depositIntoSavingsByUsername(AccountServices.java:188) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:121) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:00:51,734 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "transaction_amount" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.saveAllTransactions(AccountDaoImpl.java:457) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:108) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:148) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:01:37,042 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "transaction_amount" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromSavingsByUsername(AccountServices.java:133) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:176) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:03:39,314 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "transaction_amount" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.transferToSavingsByUsername(AccountServices.java:217) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:205) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:04:18,973 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "transaction_amount" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.transferToSavingsByUsername(AccountServices.java:217) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:205) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:06:08,211 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: column "transaction_amount" is of type money but expression is of type double precision
+  Hint: You will need to rewrite or cast the expression.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.transferToCheckingByUsername(AccountServices.java:250) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:236) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:11:12,432 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "date_and_time" of relation "transactions" violates not-null constraint
+  Detail: Failing row contains (2, null, 999954.00, Deposit into checking, remy123).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.depositIntoCheckingByUsername(AccountServices.java:166) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:94) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:32:29,533 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 14:32:41,345 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "transactions_username_key"
+  Detail: Key (username)=(remy123) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.saveAllTransactions(AccountDaoImpl.java:457) [classes/:?]
+	at com.freelance.Services.AccountServices.depositIntoCheckingByUsername(AccountServices.java:161) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:96) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:33:22,160 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "transactions_username_key"
+  Detail: Key (username)=(remy123) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.saveAllTransactions(AccountDaoImpl.java:457) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:108) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:158) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:35:39,775 INFO c.f.c.MainMenu [main] remy123has successfully logged in
+2023-06-21 14:36:29,637 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "transactions_username_key"
+  Detail: Key (username)=(remy123) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.saveAllTransactions(AccountDaoImpl.java:457) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromCheckingByUsername(AccountServices.java:108) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:158) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:38:14,623 ERROR c.f.d.AccountDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "transactions_username_key"
+  Detail: Key (username)=(remy123) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.AccountDaoImpl.saveAllTransactions(AccountDaoImpl.java:457) [classes/:?]
+	at com.freelance.Services.AccountServices.withdrawalFromSavingsByUsername(AccountServices.java:131) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:191) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]
+2023-06-21 14:40:41,015 ERROR c.f.d.TransactionsDaoImpl [main] SQL exception occured
+org.postgresql.util.PSQLException: ERROR: null value in column "date_and_time" of relation "transactions" violates not-null constraint
+  Detail: Failing row contains (8, null, 1004383.00, Transfer to checking, remy123).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.0.jar:42.6.0]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.0.jar:42.6.0]
+	at com.freelance.dao.TransactionsDaoImpl.createTransactionHistory(TransactionsDaoImpl.java:66) [classes/:?]
+	at com.freelance.Services.AccountServices.transferToCheckingByUsername(AccountServices.java:260) [classes/:?]
+	at com.freelance.consoleViews.CustomerDashboard.view(CustomerDashboard.java:254) [classes/:?]
+	at com.freelance.consoleViews.MainMenu.view(MainMenu.java:56) [classes/:?]
+	at com.freelance.App.main(App.java:24) [classes/:?]

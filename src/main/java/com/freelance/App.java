@@ -1,5 +1,10 @@
 package com.freelance;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.freelance.consoleViews.MainMenu;
+
 /**
  * --Full stack path
  * --1. create your db schema and validate that all operations work
@@ -9,7 +14,13 @@ package com.freelance;
  *
  */
 public class App {
+
+    static Logger logger = LogManager.getLogger(App.class);
+
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        MainMenu mainMenu = new MainMenu();
+
+        mainMenu.view();
     }
 }
